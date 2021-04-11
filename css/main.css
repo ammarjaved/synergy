@@ -1,0 +1,228 @@
+	html,
+		body {
+			height: 100%;
+			 margin: 0;
+
+		}
+
+
+#map {position: absolute; top: 0; bottom: 0; left: 0; right: 0;  }
+
+#draggable { width: 420px; height: 540px; padding: 0.5em; cursor: move; z-index: 1000000;}
+
+#cbtn{
+	font-size: 30px;
+	color: red;
+}
+#mstatus{
+	margin-top: 5px;
+	margin-bottom: 10px; 
+	width: 100%;
+
+}
+
+#search{
+		margin-bottom: 8px;
+		margin-left: 10px; 
+		padding: 6px;
+		border: none;
+		font-size: 15px;
+		border-radius: 10px;
+		box-shadow: 0 2px 5px #ff7c7c, 0 0 0 
+}
+#ser{
+	margin-bottom: 8px;
+		margin-left: 10px; 
+}
+#tblbtn_update{
+	margin-right: 10px; 
+	margin-bottom: 10px;
+}
+
+#choose{
+	margin-bottom: 25px;
+}
+#dbtndel{
+	margin-top: 30px;
+	margin-left: 60px;
+}
+#btnsave{
+	margin-right: 10px;
+}
+
+.tt-dropdown-menu {
+	left: 15px !important;
+	background-color:#ff7c7c;
+	
+    border: 0px solid rgba(0, 0, 0, 0.2);
+	border-radius: 8px;
+	font-size: 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  margin-top: 2px !important;
+    padding: 2px 2px  2px !important;
+    width: 200px;
+}
+.tblinput{
+	width: 205px;
+	box-sizing: border-box;
+	
+	font-size: 12px;
+	
+	padding: 5px 7px 4px 2px;
+	transition: width 0.4s ease-in-out;
+	border: none;
+  border-bottom: 1px solid #ccc;
+  }
+  
+.tblinput:focus {
+	width: 100%;
+  }
+
+
+
+
+
+.inputfile{
+	display: none;
+	}
+
+.modal{
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: fit-content;
+height: fit-content;
+padding: 0 !important;
+}
+.modal-dialog{margin:0}
+.inputfile{
+	display: none;
+	}
+
+.close_btn{
+	background: red;
+	color: white;
+	width: 25px;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	border-radius: 50%;
+	position: absolute;
+	top: 1px;
+	right: 1px;
+	cursor: pointer;
+	}
+	
+.block {
+	display: block;
+	width: 100%;
+	border: none;
+	background-color: #337ab7;
+	color: white;
+	padding: 9px 10px;
+	font-size: 14px;
+	cursor: pointer;
+	text-align: center;
+	margin-bottom: 13px;
+	margin-top: 5px;
+	border-radius: 6px;
+  }
+.block:hover {
+background-color:red;
+color: #ddd;
+}
+
+hr { margin-top: 0px; margin-bottom: 5px; color:red; border: 0.5px solid red;}
+
+.cnav{
+    margin-bottom: 0px !important;
+}
+.logg{
+	color: red;
+	font-size:20px;
+}
+.sidegr{
+	color: red;
+	font-size:18px;
+	margin-top: 10px;
+}
+.sidegl{
+	color: red;
+	font-size:18px;
+	margin-top: 0px;
+}
+
+#nl2{
+	display: none;
+	}
+#nr2{
+	display: none;
+	}
+/* #nr3{
+	display: none;
+	} */
+
+	
+		#content,
+		.sidebar {
+			height: calc(100vh - 0px);
+			
+		}
+		#row-main {
+			overflow-x: hidden; /* necessary to hide collapsed sidebars */
+		}
+		#content {
+			background-color: lightyellow;
+			
+			-webkit-transition: width 0.3s ease;
+			-moz-transition: width 0.3s ease;
+			-o-transition: width 0.3s ease;
+			transition: width 0.3s ease;
+		}
+		#content .btn-group {
+			margin-bottom: 10px;
+		}
+		.col-md-6 .width-9,
+		.col-md-6 .width-12,
+		.col-md-9 .width-6,
+		.col-md-9 .width-12,
+		.col-md-12 .width-6,
+		.col-md-12 .width-9 {
+			display: none; /* just hiding labels for demo purposes */
+		}
+		.sidebar {
+			background-color: #e8e8e8;
+			
+			-webkit-transition: margin 0.3s ease;
+			-moz-transition: margin 0.3s ease;
+			-o-transition: margin 0.3s ease;
+			transition: margin 0.3s ease;
+		}
+		.collapsed {
+			display: none; /* hide it for small displays */
+		}
+		@media (min-width: 992px) {
+			.collapsed {
+				display: block;
+			}
+			#sidebar-left.collapsed {
+				margin-left: -25%; /* same width as sidebar */
+			}
+			#sidebar-right.collapsed {
+				margin-right: -25%; /* same width as sidebar */
+			}
+		}
+	.typeahead {
+		background-color: white !important;
+	}
+
+	.tt-hint {
+		width: 100%;
+		height: 100%;
+	}
+	.tt-suggestions{
+		background-color: white !important;
+	}
+
+	
