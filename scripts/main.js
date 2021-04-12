@@ -112,6 +112,7 @@ $(document).ready(function() {
       var tdl6 = $("#tdl6").val();
       var tdl7 = $("#tdl7").val();
       var tdl8 = $("#tdl8").val();
+      var tdl9 = $("#tdl9").val();
       var uid = $("#uid").val();
       var dp_id = $("#dp_id").val();
 	  
@@ -126,7 +127,7 @@ $(document).ready(function() {
       $.ajax({
         url: "services/dpupdate.php",
         type : "POST",
-        data : {Status: tdl1, DBOper: tdl2, Remarks: tdl3, Device_ID: tdl4, House_No: tdl5, Name: tdl6, Dist_Tranx: tdl7, Meter_no: tdl8, p_id: dp_id, user_id: uid},
+        data : {Status: tdl1, DBOper: tdl2, Remarks: tdl3, Device_ID: tdl4, House_No: tdl5, Name: tdl6, Dist_Tranx: tdl7, Meter_no: tdl8, p_id: dp_id, user_id: uid,comment:tdl9},
         success: function(data) {
           if(data == 1){
               addDemandPointJson();
@@ -516,6 +517,7 @@ function getProperties(layer){
                         $('#tdl6').val(data.features[0].properties.str_name); 
                         $('#tdl7').val(data.features[0].properties.dist_tranx); 
                         $('#tdl8').val(data.features[0].properties.meter_no);
+                        $('#tdl9').val(data.features[0].properties.comment);
                         cldp=L.geoJson({ "type": "Point", "coordinates": [data.features[0].geometry.coordinates[0], data.features[0].geometry.coordinates[1]] }).addTo(map);
 
 
@@ -653,6 +655,7 @@ function addDemandPointJson() {
                         $('#tdl6').val(feature.properties.str_name);
                         $('#tdl7').val(feature.properties.dist_tranx);
                         $('#tdl8').val(feature.properties.meter_no);
+                        $('#tdl9').val(feature.properties.comment);
                         $("#btn_del").show()
                         p_id=feature.properties.device_id;
                         // highlight.clearLayers().addLayer(L.circleMarker([feature.geometry.coordinates[1], feature.geometry.coordinates[0]], highlightStyle));

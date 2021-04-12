@@ -21,6 +21,7 @@ class InsertData extends connection
             $trans=$_REQUEST['Dist_Tranx'];
             $m_no= $_REQUEST['Meter_no'];
             $p_id=$_REQUEST['p_id'];
+            $comment=$_REQUEST['comment'];
             // $p_id=1;
             $user_id=$_REQUEST['user_id'];
 
@@ -43,7 +44,7 @@ class InsertData extends connection
             }
         
             $sql_reg="UPDATE public.demand_point
-            SET  status='$status', user_id='$user_id', db_oper='$db_op', remarks='$remarks', house_no='$house_no', str_name='$name', dist_tranx='$trans',  meter_no='$m_no'
+            SET  status='$status', user_id='$user_id', db_oper='$db_op', remarks='$remarks', house_no='$house_no', str_name='$name', dist_tranx='$trans',  meter_no='$m_no',comment='$comment'
             WHERE device_id='$device_id'";
             $sql_reg_num = pg_query($sql_reg);
 

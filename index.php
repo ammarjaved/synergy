@@ -84,14 +84,14 @@ else {
             			<button class="btn btn-primary block" onclick="getProperties('dp2')">Demand Point with Details </button>
 
             <div id="search-bar" class="row">
-                <input type="text" style="margin-bottom: 8px;margin-left: 10px;padding: 6px;border: none;font-size: 15px;border-radius: 10px;box-shadow: 0 2px 5px #ff7c7c, 0 0 0;" id="search_did" name="search_did" placeholder="Serach Device id" class="typeahead1">
+                <input type="text" style="margin-bottom: 8px;margin-left: 10px;padding: 6px;border: none;font-size: 15px;border-radius: 10px;box-shadow: 0 2px 5px #ff7c7c, 0 0 0;" id="search_did" name="search_did" placeholder="Search Device id" class="typeahead1">
                 <button  id="ser1" style="margin-bottom: 8px;margin-left: 10px;" onclick="search_did()" class="btn btn-success">Search</button>
             </div>
             <div id="search-bar" class="row">
-                <input type="text" style="margin-bottom: 8px;margin-left: 10px;padding: 6px;border: none;font-size: 15px;border-radius: 10px;box-shadow: 0 2px 5px #ff7c7c, 0 0 0;" id="search_meter" name="search_meter" placeholder="Serach meter no" class="typeahead2">
+                <input type="text" style="margin-bottom: 8px;margin-left: 10px;padding: 6px;border: none;font-size: 15px;border-radius: 10px;box-shadow: 0 2px 5px #ff7c7c, 0 0 0;" id="search_meter" name="search_meter" placeholder="Search meter no" class="typeahead2">
                 <button  id="ser1" style="margin-bottom: 8px;margin-left: 10px;" onclick="search_meter()" class="btn btn-success">Search</button>
             </div>
-			<div style="max-height:500px; overflow-y: auto; overflow-x: auto;">
+			<div style="max-height:50%; overflow-y: auto; overflow-x: auto;">
 				<table class="table table-bordered table-hover table-striped table-responsive">
 				<tbody>
 						<form id="tblform" >
@@ -141,6 +141,11 @@ else {
 							<td>Meter_no</td>
 							<td ><input id="tdl8" class="tblinput" name="Meter_no"></input></td>
 							</tr>
+
+                            <tr>
+                                <td>Comment</td>
+                                <td ><input id="tdl9" class="tblinput" name="comment"></input></td>
+                            </tr>
 
 							<tr>
 							<td colspan="2"> <div id="mstatus"></div> </td>
@@ -284,10 +289,10 @@ else {
             <button class="btn btn-primary block" onclick="getProperties('rm')">Remove Point</button>
 	
 			<div id="search-bar" class="row">
-			<input type="text" id="search" name="search" placeholder="Serach Meter_No..." class="typeahead">
+			<input type="text" id="search" name="search" placeholder="Search Meter_No..." class="typeahead">
                 <button  id="ser" onclick="search()" class="btn btn-success">Search</button>
 			</div>
-            <div style="max-height:68%; overflow-y: scroll;">
+            <div style="max-height:60%; overflow-y: scroll;">
 				<table class="table table-bordered table-hover table-striped">
 				<tbody>
 												

@@ -68,7 +68,8 @@ class Pss extends connection
 				'house_no',house_no,
 				'str_name', str_name,
 				'dist_tranx', dist_tranx,
-				'meter_no', meter_no
+				'meter_no', meter_no,
+				'comment', comment
             )
         )
     )
