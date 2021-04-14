@@ -17,12 +17,12 @@ class InsertData extends connection
 
 
         if($dp==1) {
-            $sql_reg = "DELETE FROM public.demand_point WHERE device_id=$p_id;";
+            $sql_reg = "DELETE FROM public.demand_point WHERE p_id=$p_id;";
         }else{
             $sql_reg = "DELETE FROM public.demand_point WHERE device_id='$p_id';";
         }
 
-    echo $sql_reg;
+  //  echo $sql_reg;
 
         $sql_reg_num = pg_query($sql_reg);
 

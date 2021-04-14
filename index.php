@@ -228,6 +228,12 @@ else {
 					</div>
 					</div>
 
+                    <div class="form-group row">
+                        <div class="col-sm-12">
+                            <input type="text" class="form-control" id="commentiiii" name="comment1" placeholder="comment" >
+                        </div>
+                    </div>
+
 					<div class="form-group" id="choose">
 					<label class="col-md-6 control-label" for="filebutton">Meter_No Excel File</label>
 					<div class="col-md-4">
