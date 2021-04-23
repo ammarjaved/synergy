@@ -194,7 +194,7 @@ $(document).ready(function() {
         });
         boundary.addTo(map);
 
-        var boundary_5 = L.tileLayer.wms("http://121.121.232.53:7090/geoserver/TNB/wms", {
+        var boundary_5 = L.tileLayer.wms("http://121.121.232.54:7090/geoserver/TNB/wms", {
             layers: 'TNB:5x5_sub_grid_bangi_east',
             format: 'image/png',
             maxZoom: 20,
@@ -202,14 +202,14 @@ $(document).ready(function() {
         });
         boundary_5.addTo(map);
 		
-		var boundary_2 = L.tileLayer.wms("http://121.121.232.53:7090/geoserver/TNB/wms", {
+		var boundary_2 = L.tileLayer.wms("http://121.121.232.54:7090/geoserver/TNB/wms", {
             layers: 'TNB:2x5_subgrid',
             format: 'image/png',
             maxZoom: 20,
             transparent: true
         });
 
-         customer = L.tileLayer.wms("http://121.121.232.53:7090/geoserver/TNB/wms", {
+         customer = L.tileLayer.wms("http://121.121.232.54:7090/geoserver/TNB/wms", {
             layers: 'TNB:bangi_customer',
             format: 'image/png',
              maxZoom: 20,
@@ -217,14 +217,14 @@ $(document).ready(function() {
         }, {buffer: 10});
         customer.addTo(map);
 
-         dp = L.tileLayer.wms("http://121.121.232.53:7090/geoserver/TNB/wms", {
+         dp = L.tileLayer.wms("http://121.121.232.54:7090/geoserver/TNB/wms", {
             layers: 'TNB:demand_point_without_meter_number',
             format: 'image/png',
              maxZoom: 20,
             transparent: true
         });
         dp.addTo(map);
-        dp2 = L.tileLayer.wms("http://121.121.232.53:7090/geoserver/TNB/wms", {
+        dp2 = L.tileLayer.wms("http://121.121.232.54:7090/geoserver/TNB/wms", {
             layers: 'TNB:demand_point_with_meter_number',
             format: 'image/png',
             maxZoom: 20,
