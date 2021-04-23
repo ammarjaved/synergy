@@ -186,7 +186,7 @@ $(document).ready(function() {
         }).addTo(map);
 
 
-        var boundary = L.tileLayer.wms("http://121.121.232.53:7090/geoserver/TNB/wms", {
+        var boundary = L.tileLayer.wms("http://121.121.232.54:7090/geoserver/TNB/wms", {
             layers: 'TNB:boundary_bangi_east',
             format: 'image/png',
             maxZoom: 20,

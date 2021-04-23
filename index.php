@@ -450,7 +450,7 @@ else {
 
 
 	
-<script src="http://malsup.github.com/jquery.form.js"></script>
+<script src="scripts/jquery.form.js"></script>
 <script src="scripts/main.js"></script>
 <script src="scripts/style.js"></script>
 <script src="scripts/typeahead.min.js"></script>
