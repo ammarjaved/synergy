@@ -14,7 +14,7 @@ if(isset($_SESSION['logedin'])){
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script>
-    <script src="http://malsup.github.com/jquery.form.js"></script>
+    <script src="jquery.form.js"></script>
 
 
 	 <script>
