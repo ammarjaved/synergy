@@ -42,9 +42,15 @@ class InsertData extends connection
 
                 }
             }
+
+            $sql_sth="select assb_house_no,street from public.bangi_customer where equipment='$m_no'";
+            $result_sth = pg_query($sql_sth);
+            $rs_sth=pg_fetch_assoc($result_sth);
+            $h_no=$rs_sth['assb_house_no'];
+            $s_name=$rs_sth['street'];
         
             $sql_reg="UPDATE public.demand_point
-            SET  status='$status', user_id='$user_id', db_oper='$db_op', remarks='$remarks', house_no='$house_no', str_name='$name', dist_tranx='$trans',  meter_no='$m_no',comment='$comment'
+            SET  status='$status', user_id='$user_id', db_oper='$db_op', remarks='$remarks', house_no='$h_no', str_name='$s_name', dist_tranx='$trans',  meter_no='$m_no',comment='$comment'
             WHERE device_id='$device_id'";
             $sql_reg_num = pg_query($sql_reg);
 
